@@ -45,8 +45,8 @@ def index():
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
-    graphs = [
-        {
+    # graph 1
+    graph_1 = {
             'data': [
                 Bar(
                     x=genre_names,
@@ -64,7 +64,56 @@ def index():
                 }
             }
         }
-    ]
+    # graph 2
+    df['num_cat'] = None
+    df['num_cat'] = df.iloc[:,4:].sum(axis=1)
+    num_cat = df.groupby('num_cat').count()['id'].index
+    num_cat_count = df.groupby('num_cat').count()['id'].values
+    
+    graph_2 = {
+            'data': [
+                Bar(
+                    x=num_cat,
+                    y=num_cat_count
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Total Number of Related Categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Total Number of Related Categories"
+                }
+            }
+        }
+    
+    # graph 3
+    category_names = df.drop(columns=['num_cat']).iloc[:,4:].sum(axis=0).sort_values(ascending=False).index
+    category_frequency = df.drop(columns=['num_cat']).iloc[:,4:].sum(axis=0).sort_values(ascending=False).values
+    
+    graph_3 = {
+            'data': [
+                Bar(
+                    x=category_names,
+                    y=category_frequency
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Message Categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category Names"
+                }
+            }
+        }      
+        
+       
+    graphs = [graph_1,graph_2,graph_3]
     
     # add new plots here
     
