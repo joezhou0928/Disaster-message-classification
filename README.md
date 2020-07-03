@@ -23,5 +23,4 @@ There are three folders: app, data and models.
 ![Message Classification](https://github.com/joezhou0928/Disaster-message-classification/blob/master/ML.png)
 **Image 2**: Distribution of Total Number of Categories Related
 ![Distribution of Total Number of Categories Related](https://github.com/joezhou0928/Disaster-message-classification/blob/master/Viz.png)
-Add model result here.
-Explain how imbalance data affect our model performance.
+
