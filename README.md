@@ -3,9 +3,9 @@
 This project is about disaster messages classification based on machine learning. During each disaster event, people would post messages in different categories depending on their urgent needs. Knowing the category of each message can improve the efficiency of disaster relief agencies' work. An web app is also built to visualize the analysis.
 ### Files:
 There are three folders: app, data and models.
-**data**: Two csv files contain the data we need. process_data.py will process raw data and write clean data into a database. This is the *first* python file to execute.
-**models**: train_classifier.py will read in the clean data from the database and train a machine learning for the classification. This is the *second* python file to execute.
-**app**: run.py file will set up the application for us as the last step. This is the *last* python file to execute.
+1. **data**: Two csv files contain the data we need. process_data.py will process raw data and write clean data into a database. This is the *first* python file to execute.
+2. **models**: train_classifier.py will read in the clean data from the database and train a machine learning for the classification. This is the *second* python file to execute.
+3. **app**: run.py file will set up the application for us as the last step. This is the *last* python file to execute.
 ### Instructions:
 1. Run the following commands to set up your database and model.
 
