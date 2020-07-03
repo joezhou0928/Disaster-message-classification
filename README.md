@@ -1,6 +1,6 @@
 # Disaster Response Pipeline Project
 ### Summary:
-This project is about disaster messages classification based on machine learning. During each disaster event, people would post messages on different categories depending on their urgent needs. Knowing the category of each message can improve the efficiency of disaster relief agencies' work. An web app is also built to visualize the analysis.
+This project is about disaster messages classification based on machine learning. During each disaster event, people would post messages on different categories depending on their urgent needs. Knowing the category/categories of each message can improve the efficiency of disaster relief agencies' work. An web app is also built to visualize the analysis.
 ### Files:
 There are three folders: app, data and models.
 1. **data**: Two csv files contain the data we need. process_data.py will process raw data and write clean data into a database. This is the *first* python file to execute.
