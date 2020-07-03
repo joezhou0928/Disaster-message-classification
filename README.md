@@ -21,3 +21,4 @@ There are three folders: app, data and models.
 ### Examples:
 Add some screenshots here.
 Add model result here.
+Explain how imbalance data affect our model performance.
