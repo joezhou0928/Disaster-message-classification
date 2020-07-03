@@ -20,3 +20,4 @@ There are three folders: app, data and models.
 3. Go to https://SPACEID-3001.SPACEDOMAIN to check your application! To know the SPACEID and SPACEDOMAIN, type in 'env | grep WORK' in your command prompt.
 ### Examples:
 Add some screenshots here.
+Add model result here.
