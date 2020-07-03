@@ -91,7 +91,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     Y_pred = model.predict(X_test)
     # for each category, print the classification report
     for i in range(Y_pred.shape[1]):
-        print(category_names[i],classification_report(Y_test.iloc[:,i],Y_pred[:,i]))
+        print(category_names[i],'\n',classification_report(Y_test.iloc[:,i],Y_pred[:,i]))
 
 
 def save_model(model, model_filepath):
