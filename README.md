@@ -19,6 +19,7 @@ There are three folders: app, data and models.
 
 3. Go to https://SPACEID-3001.SPACEDOMAIN to check your application! To know the SPACEID and SPACEDOMAIN, type in 'env | grep WORK' in your command prompt.
 ### Examples:
-Add some screenshots here.
+![Message Classification](https://github.com/joezhou0928/Disaster-message-classification/blob/master/ML.png)
+![Distribution of Total Number of Categories Related](https://github.com/joezhou0928/Disaster-message-classification/blob/master/Viz.png)
 Add model result here.
 Explain how imbalance data affect our model performance.
