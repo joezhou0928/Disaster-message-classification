@@ -1,3 +1,4 @@
+# import the needed packages
 import sys
 import nltk
 nltk.download(['punkt', 'wordnet'])
@@ -67,8 +68,8 @@ def build_model():
         ('clf',MultiOutputClassifier(RandomForestClassifier()))
     ])
     # set up parameters for grid search
-    # I only put one value to save some time
-    # because finding the best parameters is not the focus here
+    # I only put one value here to save execution time
+    # because finding the best parameters is probably not the focus here
     parameters = {
         'clf__estimator__min_samples_split': [3]     
     }
